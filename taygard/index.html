@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAYGARD — 野外安全アプリ / Outdoor Safety App</title>
+<meta name="description" content="クマなど野生動物の出没マップと対処法、撃退音、家族へのSOS。圏外でも使える野外安全アプリ TAYGARD。">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root{--bg:#14231C;--panel:#1B2F25;--line:#2C4436;--text:#EEF1E8;--sub:#A9B8AC;--accent:#FF7A1A}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.8}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+  .top{display:flex;align-items:center;gap:12px}
+  .top img{width:44px;height:44px;border-radius:10px}
+  .brand{font-weight:900;letter-spacing:.14em;font-size:20px}.brand b{color:var(--accent)}
+  .lang{display:flex;gap:8px}
+  .lang a{color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:700}
+  .lang a.on{background:var(--accent);border-color:var(--accent);color:#1d1206}
+  .hero img{display:block;width:100%;border-radius:18px;border:1px solid var(--line)}
+  .lead{font-size:18px;margin:26px 0 8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:22px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+  .card h3{margin:0 0 6px;font-size:17px;color:#FFC59A}
+  .card p{margin:0;font-size:15px;color:#DCE3DA}
+  .stores{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+  .stores span{border:2px solid var(--accent);border-radius:999px;padding:8px 20px;font-weight:800;color:#FFC59A}
+  .note{color:var(--sub);font-size:14px}
+  footer{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 30px;color:var(--sub);font-size:13px;display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  footer a{color:#FFB27A}
+  [data-l]{display:none}
+  body.ja [data-l="ja"],body.en [data-l="en"]{display:block}
+</style>
+</head>
+<body class="ja">
+<div class="wrap">
+<header>
+  <div class="top"><img src="img/icon.png" alt="TAYGARD"><div class="brand">TAY<b>GARD</b></div></div>
+  <nav class="lang"><a href="#ja" id="lj">日本語</a><a href="#en" id="le">English</a></nav>
+</header>
+
+<!-- ============ 日本語 ============ -->
+<section data-l="ja">
+  <div class="hero"><img src="img/header_ja.jpg" alt="TAYGARD 野外安全アプリ"></div>
+  <p class="lead">TAYGARD（タイガード）は、山や川へ出かける人と、その家族のための野外安全アプリです。</p>
+  <div class="grid">
+    <div class="card"><h3>出没レーダー・マップ</h3><p>近くのクマなどの出没を、方角と距離で表示。自治体の公開データを自動で反映します。</p></div>
+    <div class="card"><h3>動物ごとの対処法</h3><p>出会わないための工夫、出会ったときの行動、してはいけないこと。季節カレンダー付き。</p></div>
+    <div class="card"><h3>撃退音・笛・鈴</h3><p>動物ごとの音域の音やホイッスル。マナーモードでも鳴ります。<br><span class="note">※効果には個体差があり、追い払いを保証するものではありません</span></p></div>
+    <div class="card"><h3>家族へSOS</h3><p>現在地付きのメッセージをすぐ家族へ。110番・119番へもその場で電話できます。</p></div>
+    <div class="card"><h3>圏外でも使える地図（Pro）</h3><p>出かける前に地図を保存すれば、電波のない山の中でも表示できます。</p></div>
+    <div class="card"><h3>見守り・移動の記録（Pro）</h3><p>入山・下山を家族に連絡。歩いた道すじを記録してGPXで共有。</p></div>
+  </div>
+  <div class="stores"><span>App Store</span><span>Google Play</span><span>BOOTH</span></div>
+  <p class="note">日本語・英語に対応。対応地域：日本・北米・欧州・豪州</p>
+</section>
+
+<!-- ============ English ============ -->
+<section data-l="en">
+  <div class="hero"><img src="img/header_en.jpg" alt="TAYGARD Outdoor Safety App"></div>
+  <p class="lead">TAYGARD is an outdoor safety app for people heading into the mountains and rivers — and for the families waiting for them at home.</p>
+  <div class="grid">
+    <div class="card"><h3>Sighting radar and map</h3><p>See nearby wildlife sightings by direction and distance, with official and open data updated automatically.</p></div>
+    <div class="card"><h3>What to do, animal by animal</h3><p>How to avoid encounters, what to do if you meet one, and what never to do. With a seasonal calendar.</p></div>
+    <div class="card"><h3>Deterrent sounds, whistle, bell</h3><p>Sounds tuned for each animal and a whistle. Plays even in silent mode.<br><span class="note">※Effects vary. Deterrence is not guaranteed.</span></p></div>
+    <div class="card"><h3>SOS to family</h3><p>Send your family a message with your location in seconds, or call your local emergency number.</p></div>
+    <div class="card"><h3>Offline maps (Pro)</h3><p>Save maps before you go and view them where there is no signal.</p></div>
+    <div class="card"><h3>Watch and track recording (Pro)</h3><p>Let family know when you set out and get back. Record your route and share it as GPX.</p></div>
+  </div>
+  <div class="stores"><span>App Store</span><span>Google Play</span></div>
+  <p class="note">Available in English and Japanese. Regions: Japan, North America, Europe, Australia.</p>
+</section>
+
+<footer>
+  <a href="../">© 2026 Alcyline</a>
+  <a href="support.html" id="fs">サポート</a>
+  <a href="privacy.html" id="fp">プライバシーポリシー</a>
+</footer>
+</div>
+<script>
+  function setLang(){
+    var en = location.hash === '#en';
+    document.body.className = en ? 'en' : 'ja';
+    document.documentElement.lang = en ? 'en' : 'ja';
+    document.getElementById('lj').className = en ? '' : 'on';
+    document.getElementById('le').className = en ? 'on' : '';
+    var fs = document.getElementById('fs'), fp = document.getElementById('fp');
+    fs.textContent = en ? 'Support' : 'サポート'; fs.href = en ? 'support.html#en' : 'support.html';
+    fp.textContent = en ? 'Privacy Policy' : 'プライバシーポリシー'; fp.href = en ? 'privacy.html#en' : 'privacy.html';
+  }
+  window.addEventListener('hashchange', setLang);
+  setLang();
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alcyline — 暮らしと野外の「困った」を解決する実用アプリ</title>
+<meta name="description" content="Alcylineは、暮らしや野外の「困った」を解決する実用アプリを作っています。">
+<link rel="icon" href="taygard/img/icon.png">
+<style>
+  :root{--bg:#121A20;--panel:#1A242C;--line:#2B3944;--text:#EEF1EE;--sub:#A7B4BC}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#1E3340 0%,var(--bg) 60%);color:var(--text);
+       font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.8;min-height:100vh}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+  .logo{font-weight:900;letter-spacing:.22em;font-size:22px}
+  .lang{display:flex;gap:8px}
+  .lang a{color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:700}
+  .lang a.on{background:#EEF1EE;color:#121A20;border-color:#EEF1EE}
+  .hero{padding:50px 0 30px}
+  .hero h1{font-size:32px;line-height:1.5;margin:0 0 12px}
+  .hero p{color:var(--sub);margin:0;font-size:16px}
+  h2{font-size:20px;margin:40px 0 6px}
+  .sub{color:var(--sub);font-size:14px;margin:0 0 16px}
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .app{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+  .app::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--c)}
+  .head{display:flex;align-items:center;gap:14px}
+  .ic{width:60px;height:60px;border-radius:14px;flex:none;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .ic img{width:100%;height:100%}
+  .name{font-weight:900;letter-spacing:.1em;font-size:19px}
+  .tag{font-size:13px;color:var(--c);font-weight:800}
+  .app p{margin:0;font-size:15px;color:#D8DFE2}
+  .badge{display:inline-block;font-size:12px;font-weight:800;border-radius:999px;padding:2px 10px;border:1px solid var(--c);color:var(--c)}
+  .links{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;margin-top:auto}
+  .links a{color:var(--c)}
+  .soon{color:var(--sub);font-size:13px;margin-top:auto}
+  footer{border-top:1px solid var(--line);margin-top:50px;padding:18px 0 30px;color:var(--sub);font-size:13px;text-align:center}
+  [data-l]{display:none!important}
+  body.ja [data-l="ja"],body.en [data-l="en"]{display:block!important}
+  body.ja span[data-l="ja"],body.en span[data-l="en"]{display:inline!important}
+  body.ja .links[data-l="ja"],body.en .links[data-l="en"]{display:flex!important}
+</style>
+</head>
+<body class="ja">
+<div class="wrap">
+<header>
+  <div class="logo">ALCYLINE</div>
+  <nav class="lang"><a href="#ja" id="lj">日本語</a><a href="#en" id="le">English</a></nav>
+</header>
+
+<section class="hero">
+  <div data-l="ja"><h1>暮らしや野外の「困った」を解決する、<br>実用アプリを作っています。</h1>
+    <p>迷わず使えて、圏外でも頼れる。Alcyline は個人で運営している小さなアプリ開発ブランドです。</p></div>
+  <div data-l="en"><h1>Practical apps that solve<br>everyday and outdoor problems.</h1>
+    <p>Simple to use, and dependable even without a signal. Alcyline is a small independent app studio.</p></div>
+</section>
+
+<h2><span data-l="ja">安全シリーズ</span><span data-l="en">Safety series</span></h2>
+<p class="sub"><span data-l="ja">山・家族・海。出かける人と、待つ家族のために。</span><span data-l="en">Mountains, family and sea — for the people who go out, and the family who waits.</span></p>
+
+<div class="apps">
+  <!-- TAYGARD（山） -->
+  <div class="app" style="--c:#FF7A1A">
+    <div class="head">
+      <div class="ic"><img src="taygard/img/icon.png" alt="TAYGARD"></div>
+      <div><div class="name">TAYGARD</div>
+        <div class="tag"><span data-l="ja">山の安全 ／ 野外安全アプリ</span><span data-l="en">Mountains / Outdoor safety</span></div></div>
+    </div>
+    <p data-l="ja">クマなど野生動物の出没レーダーと対処法、撃退音、家族へのSOS。圏外でも使える地図で、登山や山菜採りの安全を支えます。</p>
+    <p data-l="en">Wildlife sighting radar, encounter tips, deterrent sounds and SOS to family. Offline maps for hiking and foraging.</p>
+    <div><span class="badge"><span data-l="ja">公開準備中</span><span data-l="en">Coming soon</span></span></div>
+    <div class="links" data-l="ja"><a href="taygard/">詳しく見る</a><a href="taygard/support.html">サポート</a><a href="taygard/privacy.html">プライバシーポリシー</a></div>
+    <div class="links" data-l="en"><a href="taygard/#en">Learn more</a><a href="taygard/support.html#en">Support</a><a href="taygard/privacy.html#en">Privacy Policy</a></div>
+  </div>
+
+  <!-- Merope（家族） -->
+  <div class="app" style="--c:#E7B85B">
+    <div class="head">
+      <div class="ic" style="background:#2A2416">
+        <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true"><path d="M14 32 L30 18 L46 32 V46 H14 Z" fill="none" stroke="#E7B85B" stroke-width="3" stroke-linejoin="round"/><path d="M30 26 l2 4.5 4.8.4-3.7 3.1 1.2 4.7L30 36.2l-4.3 2.5 1.2-4.7-3.7-3.1 4.8-.4z" fill="#E7B85B"/></svg>
+      </div>
+      <div><div class="name">Merope</div>
+        <div class="tag"><span data-l="ja">家族の防災・見守り</span><span data-l="en">Family safety and preparedness</span></div></div>
+    </div>
+    <p data-l="ja">家族みんなの防災と安否確認のためのアプリ。避難所マップ、チェックインで、もしものときに家族とつながります。</p>
+    <p data-l="en">Disaster preparedness and check-ins for the whole family, with an evacuation shelter map.</p>
+    <div><span class="badge"><span data-l="ja">開発中</span><span data-l="en">In development</span></span></div>
+    <div class="soon"><span data-l="ja">詳しいページは公開時に追加します。</span><span data-l="en">More details at launch.</span></div>
+  </div>
+
+  <!-- HALCYGARD（海） -->
+  <div class="app" style="--c:#3FB6D8">
+    <div class="head">
+      <div class="ic" style="background:#11262E">
+        <svg viewBox="0 0 60 60" width="60" height="60" aria-hidden="true"><path d="M8 30 C18 20 24 20 30 26 C36 20 42 20 52 30 C44 30 38 34 30 44 C22 34 16 30 8 30 Z" fill="none" stroke="#3FB6D8" stroke-width="3" stroke-linejoin="round"/><path d="M30 44 v8" stroke="#3FB6D8" stroke-width="3" stroke-linecap="round"/></svg>
+      </div>
+      <div><div class="name">HALCYGARD</div>
+        <div class="tag"><span data-l="ja">海の安全</span><span data-l="en">Sea safety</span></div></div>
+    </div>
+    <p data-l="ja">海水浴・潮干狩り・磯や堤防の釣りのための安全アプリ。危険な生き物を写真や質問で見分けられます。</p>
+    <p data-l="en">A safety app for beach days, clam digging and shore fishing. Identify dangerous sea creatures by photo or by answering questions.</p>
+    <div><span class="badge"><span data-l="ja">開発中</span><span data-l="en">In development</span></span></div>
+    <div class="soon"><span data-l="ja">詳しいページは公開時に追加します。</span><span data-l="en">More details at launch.</span></div>
+  </div>
+</div>
+
+<footer>© 2026 Alcyline</footer>
+</div>
+<script>
+  function setLang(){
+    var en = location.hash === '#en';
+    document.body.className = en ? 'en' : 'ja';
+    document.documentElement.lang = en ? 'en' : 'ja';
+    document.getElementById('lj').className = en ? '' : 'on';
+    document.getElementById('le').className = en ? 'on' : '';
+  }
+  window.addEventListener('hashchange', setLang);
+  setLang();
+</script>
+</body>
+</html>
