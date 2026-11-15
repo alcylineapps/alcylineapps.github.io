@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="ja"><head>
+<title>MEROPE — 家族の防災・見守りアプリ / Family safety app</title>
+<meta name="description" content="MEROPE（メローペ）は、災害のときに家族とつながるための防災・見守りアプリです。SOS、無事の連絡、緊急カード、集合場所、避難場所マップ。">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{--bg:#121A2B;--panel:#18233A;--panel2:#22304D;--line:#2F3F60;--text:#EEF2FA;--sub:#9AA8C4;--accent:#FFB547;--safe:#3CCB8A;--danger:#E5484D}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.8}
+  header{padding:22px 20px 16px;border-bottom:1px solid var(--line)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:900;letter-spacing:.16em;font-size:20px}
+  .brand img{width:36px;height:36px;border-radius:9px}
+  .brand b{color:var(--accent)}
+  nav.pages{display:flex;gap:14px;margin-left:auto;font-size:14px}
+  nav.pages a{color:var(--sub);text-decoration:none}
+  nav.pages a.on{color:var(--accent);font-weight:700}
+  .lang{display:flex;gap:8px;margin-top:14px}
+  .lang a{color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:700}
+  .lang a.on{background:var(--accent);border-color:var(--accent);color:#1B1408}
+  main{padding:10px 0 50px}
+  h1{font-size:26px;margin:10px 0 4px}
+  h2{font-size:19px;margin:34px 0 10px;padding-left:10px;border-left:4px solid var(--accent)}
+  h3{font-size:16px;margin:0 0 4px}
+  p,li{font-size:15.5px}
+  ul{padding-left:1.3em}
+  a{color:#FFCB7A}
+  .note{color:var(--sub);font-size:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--panel)}
+  td.c{text-align:center}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
+  summary{cursor:pointer;font-weight:700}
+  details p,details ul{margin:8px 0 2px}
+  footer{border-top:1px solid var(--line);padding:18px 20px;color:var(--sub);font-size:13px;text-align:center}
+  footer a{color:var(--sub)}
+  [data-l]{display:none}
+  body.ja [data-l="ja"],body.en [data-l="en"]{display:block}
+  body.ja span[data-l="ja"],body.en span[data-l="en"]{display:inline}
+</style>
+<style>
+  .hero{display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding:26px 0 6px}
+  .hero img{width:120px;height:120px;border-radius:28px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .hero .t{flex:1;min-width:240px}
+  .hero .tag{color:var(--accent);font-weight:800;letter-spacing:.06em}
+  .badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .badge{display:inline-block;border:1px solid var(--line);border-radius:12px;padding:8px 16px;color:var(--text);text-decoration:none;font-weight:700;font-size:14px;background:var(--panel)}
+  .badge.soon{color:var(--sub)}
+  .card h3 .ic{display:inline-block;width:26px;height:26px;border-radius:8px;text-align:center;line-height:26px;margin-right:6px;font-size:14px}
+  .ic.sos{background:var(--danger);color:#fff}.ic.ok{background:var(--safe);color:#06281A}.ic.lamp{background:var(--accent);color:#1B1408}.ic.sky{background:#7FA8E8;color:#0B1A33}
+  .sisters a{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--text)}
+  .sisters .si{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-weight:900;flex:none}
+</style>
+</head>
+<body class="ja">
+<header>
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="./" data-keep><img src="icon.png" alt=""><span><b>M</b>EROPE</span></a>
+      <nav class="pages">
+        <a href="./" data-keep class="on"><span data-l="ja">アプリ</span><span data-l="en">App</span></a>
+        <a href="support.html" data-keep class=""><span data-l="ja">サポート</span><span data-l="en">Support</span></a>
+        <a href="privacy.html" data-keep><span data-l="ja">プライバシー</span><span data-l="en">Privacy</span></a>
+      </nav>
+    </div>
+    <nav class="lang"><a href="#ja" id="lj">日本語</a><a href="#en" id="le">English</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <img src="icon.png" alt="MEROPE">
+  <div class="t">
+    <div data-l="ja"><div class="tag">家族の防災・見守りアプリ</div><h1>災害のとき、家族とつながるために。</h1>
+      <p>「無事です」をボタン1つで送るチェックイン、現在地つきのSOS、救急隊に見せる緊急カード、集合場所、近くの避難場所マップをひとつに。アカウント登録は不要で、家族の情報はスマホの中に保存します。</p></div>
+    <div data-l="en"><div class="tag">Family safety &amp; disaster preparedness</div><h1>Stay connected with your family in a disaster.</h1>
+      <p>One-tap "I'm safe" check-ins, SOS with your location, emergency ID cards for first responders, meeting points and a nearby evacuation map — in one app. No sign-up; your family's information stays on your phone.</p></div>
+    <div class="badges">
+      <span class="badge soon"><span data-l="ja">App Store（準備中）</span><span data-l="en">App Store (coming soon)</span></span>
+      <span class="badge soon"><span data-l="ja">Google Play（準備中）</span><span data-l="en">Google Play (coming soon)</span></span>
+    </div>
+  </div>
+</section>
+
+<section data-l="ja">
+<h2>できること</h2>
+<div class="grid">
+  <div class="card"><h3><span class="ic sos">!</span>SOS</h3><p>どの画面からも1回で開けます。現在地つきのSOSを家族全員へSMSやLINEなどで。緊急通報ボタンと、マナーモードでも鳴る防犯ブザーも。</p></div>
+  <div class="card"><h3><span class="ic ok">✓</span>チェックイン</h3><p>「無事です」「避難所にいます」「迎えが必要です」をボタン1つで家族に。現在地も付けられます。</p></div>
+  <div class="card"><h3><span class="ic lamp">＋</span>家族と緊急カード</h3><p>血液型・持病・アレルギー・薬・かかりつけを、救急隊に見せやすい大きな文字で。全員分を1枚の画像にして共有・印刷。</p></div>
+  <div class="card"><h3><span class="ic sky">1</span>集合場所</h3><p>第1〜第3の集合場所を決めて、地図と道順をすぐ開けます。家族にまとめて送れます。</p></div>
+  <div class="card"><h3><span class="ic ok">⌂</span>近くの避難場所</h3><p>日本は国土地理院の指定緊急避難場所・指定避難所を、災害の種類で絞り込んで表示。アメリカはFEMAの開設中の避難所、欧州・豪州は公式の案内へ。</p></div>
+  <div class="card"><h3><span class="ic lamp">3</span>シンプルモード</h3><p>子どもや高齢の家族向けに、SOS・無事です・集合場所の大きなボタン3つだけの画面に。</p></div>
+</div>
+
+<h2>無料版とPro版</h2>
+<table>
+<tr><th></th><th>無料</th><th>Pro（買い切り）</th></tr>
+<tr><td>SOS・チェックイン・家族と緊急カード・集合場所・避難場所マップ・もしもの時・シンプルモード</td><td class="c">○</td><td class="c">○</td></tr>
+<tr><td>備蓄リスト（期限・家族の人数×3日分の目安）と期限の通知</td><td class="c">－</td><td class="c">○</td></tr>
+<tr><td>持ち出し袋チェックリスト</td><td class="c">－</td><td class="c">○</td></tr>
+<tr><td>チェックインの全履歴</td><td class="c">－</td><td class="c">○</td></tr>
+<tr><td>避難場所を圏外用に保存</td><td class="c">－</td><td class="c">○</td></tr>
+</table>
+<p class="note">命を守るための機能は、無料のままずっと使えます。</p>
+
+<h2>安心して使えるように</h2>
+<ul>
+<li>アカウント登録なし。広告なし。利用状況の分析ツールも使っていません。</li>
+<li>家族の情報はスマホの中に保存し、開発者のサーバーには送りません（スマホ本体のバックアップには含まれます）。</li>
+<li>SMSの送信や電話の発信は、ご自身でボタンを押して行います。</li>
+</ul>
+<p>動作環境：iPhone・iPad（iOS 16 以降）／Android 8.0 以降　｜　日本語・English</p>
+</section>
+
+<section data-l="en">
+<h2>Features</h2>
+<div class="grid">
+  <div class="card"><h3><span class="ic sos">!</span>SOS</h3><p>One tap from any screen. Send an SOS with your location to everyone in your family by SMS, LINE, WhatsApp and more. Emergency call buttons and a loud alarm that plays even in silent mode.</p></div>
+  <div class="card"><h3><span class="ic ok">✓</span>Check-ins</h3><p>Send "I'm safe", "I'm at a shelter" or "I need to be picked up" in one tap, with your location if you like.</p></div>
+  <div class="card"><h3><span class="ic lamp">＋</span>Emergency ID cards</h3><p>Blood type, conditions, allergies, medications and doctor in large, easy-to-read cards for first responders. Share or print everyone's cards as one image.</p></div>
+  <div class="card"><h3><span class="ic sky">1</span>Meeting points</h3><p>Agree on 1st to 3rd meeting points and open maps and directions instantly. Send them to your family at once.</p></div>
+  <div class="card"><h3><span class="ic ok">⌂</span>Nearby evacuation sites</h3><p>Japan: official designated sites filtered by hazard. United States: shelters currently open from FEMA. Europe, Australia and Canada: links to official information.</p></div>
+  <div class="card"><h3><span class="ic lamp">3</span>Simple mode</h3><p>Just three big buttons — SOS, "I'm safe" and meeting point — for children or older family members.</p></div>
+</div>
+
+<h2>Free and Pro</h2>
+<table>
+<tr><th></th><th>Free</th><th>Pro (one-time)</th></tr>
+<tr><td>SOS, check-ins, family &amp; ID cards, meeting points, evacuation map, emergency info, simple mode</td><td class="c">✓</td><td class="c">✓</td></tr>
+<tr><td>Stockpile tracker (expiry dates, target for your family size) and expiry reminders</td><td class="c">－</td><td class="c">✓</td></tr>
+<tr><td>Go-bag checklist</td><td class="c">－</td><td class="c">✓</td></tr>
+<tr><td>Full check-in history</td><td class="c">－</td><td class="c">✓</td></tr>
+<tr><td>Save evacuation sites for offline use</td><td class="c">－</td><td class="c">✓</td></tr>
+</table>
+<p class="note">Life-saving features stay free forever.</p>
+
+<h2>Privacy first</h2>
+<ul>
+<li>No sign-up, no ads, no analytics.</li>
+<li>Your family's information stays on your phone and is never sent to the developer (it is included in your phone's own backup).</li>
+<li>You tap the send button for SMS and the call button yourself.</li>
+</ul>
+<p>Requirements: iPhone / iPad (iOS 16 or later), Android 8.0 or later　｜　English · 日本語</p>
+</section>
+
+<h2><span data-l="ja">Alcyline の安全アプリ</span><span data-l="en">Safety apps from Alcyline</span></h2>
+<div class="grid sisters">
+  <div class="card"><a href="../"><span class="si" style="background:#14231C;color:#FF7A1A">T</span><span><b>TAYGARD</b><br><span class="note"><span data-l="ja">山の野外安全。野生動物の出没マップ・対処法・SOS</span><span data-l="en">Outdoor safety: wildlife sightings, what to do, SOS</span></span></span></a></div>
+  <div class="card"><a href="../"><span class="si" style="background:#0E2A33;color:#4FD1C5">H</span><span><b>HALCYGARD</b><br><span class="note"><span data-l="ja">海の安全。海水浴・潮干狩り・釣り、潮位、SOS</span><span data-l="en">Sea safety: beaches, clam digging, fishing, tides, SOS</span></span></span></a></div>
+</div>
+</main>
+<footer>© 2026 Alcyline — MEROPE　｜　<a href="./" data-keep>MEROPE</a>　｜　<a href="support.html" data-keep>Support</a>　｜　<a href="privacy.html" data-keep>Privacy</a>　｜　<a href="mailto:alcylineapps@gmail.com">alcylineapps@gmail.com</a></footer>
+<script>
+  function setLang(){
+    var en = location.hash === '#en';
+    document.body.className = en ? 'en' : 'ja';
+    document.documentElement.lang = en ? 'en' : 'ja';
+    document.getElementById('lj').className = en ? '' : 'on';
+    document.getElementById('le').className = en ? 'on' : '';
+    // ページを移っても言語を保つ
+    document.querySelectorAll('a[data-keep]').forEach(function(a){ a.hash = en ? 'en' : ''; });
+  }
+  window.addEventListener('hashchange', setLang);
+  setLang();
+</script>
+</body></html>
