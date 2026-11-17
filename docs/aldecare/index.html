@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="ja"><head>
+<title>ALDECARE（アルデケア）— 家族の救急情報アプリ</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="持病・薬・連絡先をロック画面に。救急隊に「いつもの本人」を伝える、家族の救急情報アプリ。データはスマホの中だけに保存します。">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{--bg:#0F1733;--panel:#1F294D;--line:#2C3558;--text:#EEF2FA;--sub:#9AA8C4;--accent:#FF8C33;--danger:#D92626}
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(ellipse at 30% 0,#1f2c5c 0,var(--bg) 60%);background-color:var(--bg);color:var(--text);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.8}
+  header{padding:22px 20px 16px;border-bottom:1px solid var(--line)}
+  .wrap{max-width:900px;margin:0 auto;padding:0 20px}
+  .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:900;letter-spacing:.16em;font-size:20px}
+  .brand img{width:36px;height:36px;border-radius:9px}
+  .brand b{color:var(--accent)}
+  nav.pages{display:flex;gap:14px;margin-left:auto;font-size:14px}
+  nav.pages a{color:var(--sub);text-decoration:none}
+  nav.pages a.on{color:var(--accent);font-weight:700}
+  .lang{display:flex;gap:8px;margin-top:14px}
+  .lang a{color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:700}
+  .lang a.on{background:var(--accent);border-color:var(--accent);color:#1B1005}
+  .hero{display:flex;gap:28px;align-items:center;padding:44px 0 20px;flex-wrap:wrap}
+  .hero img{width:150px;height:150px;border-radius:34px;box-shadow:0 10px 40px rgba(255,140,51,.25)}
+  .hero h1{margin:0;font-size:44px;letter-spacing:.14em;line-height:1.1}
+  .hero h1 b{color:var(--accent)}
+  .hero .st{font-size:18px;color:var(--sub);font-weight:700}
+  .tag{font-size:34px;font-weight:900;line-height:1.35;margin:18px 0 4px}
+  .tag b{color:var(--accent)}
+  h2{font-size:20px;margin:40px 0 12px;padding-left:10px;border-left:4px solid var(--accent)}
+  p,li{font-size:15.5px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .card h3{margin:0 0 4px;font-size:17px}
+  .card p{margin:0;color:#D5DCEC;font-size:14.5px}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--panel)}
+  td.c{text-align:center}
+  .dl{display:flex;gap:10px;flex-wrap:wrap}
+  .dl span{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 18px;font-weight:700;color:var(--sub)}
+  .note{color:var(--sub);font-size:14px}
+  a{color:#FFB070}
+  footer{border-top:1px solid var(--line);padding:18px 20px;color:var(--sub);font-size:13px;text-align:center;margin-top:40px}
+  footer a{color:var(--sub)}
+  [data-l]{display:none}
+  body.ja [data-l="ja"],body.en [data-l="en"]{display:block}
+  body.ja span[data-l="ja"],body.en span[data-l="en"]{display:inline}
+</style>
+</head><body class="ja">
+<header>
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="./" data-keep><img src="icon.png" alt=""><span><b>A</b>LDECARE</span></a>
+      <nav class="pages">
+        <a href="./" data-keep class="on"><span data-l="ja">アプリ</span><span data-l="en">App</span></a>
+        <a href="support.html" data-keep><span data-l="ja">サポート</span><span data-l="en">Support</span></a>
+        <a href="privacy.html" data-keep><span data-l="ja">プライバシー</span><span data-l="en">Privacy</span></a>
+      </nav>
+    </div>
+    <nav class="lang"><a href="#ja" id="lj">日本語</a><a href="#en" id="le">English</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section data-l="ja">
+<div class="hero">
+  <img src="icon.png" alt="ALDECARE のアイコン">
+  <div><h1><b>A</b>LDECARE</h1><div class="st">アルデケア ─ 家族の救急情報</div></div>
+</div>
+<div class="tag">急病のとき、<br><b>本人を伝える。</b></div>
+<p>親が倒れたとき、救急隊に持病や飲んでいる薬、いつもの様子を伝えられますか？　ALDECARE は、家族の救急情報をまとめておき、もしものときにすぐ伝えるためのアプリです。最初は名前・生年月日・緊急連絡先の3つだけ。1分で準備できます。</p>
+
+<h2>できること</h2>
+<div class="grid">
+  <div class="card"><h3>救急隊に見せる</h3><p>持病・薬（市販薬やサプリも）・アレルギー・かかりつけ医・緊急連絡先を、大きな文字で表示します。</p></div>
+  <div class="card"><h3>いつもの本人を伝える</h3><p>話し方・歩き方・もの忘れの程度・平熱、最後に元気だった時刻、延命治療についての本人の希望も残せます。</p></div>
+  <div class="card"><h3>ロック画面に表示</h3><p>ロックを解除しなくても、救急隊が情報を見られます。出す項目は自分で選べます。</p></div>
+  <div class="card"><h3>119番の補助</h3><p>住所・目印・持病など、伝えることを順番に表示し、マナーモードでも読み上げます。</p></div>
+  <div class="card"><h3>救急相談（#7119・#8000）</h3><p>救急車を呼ぶか迷ったら、お住まいの地域の相談窓口に電話できます。</p></div>
+  <div class="card"><h3>問診票・救急医療情報キット</h3><p>病院の問診票も、市区町村の救急医療情報キットの用紙も、見ながら書き写せます。</p></div>
+</div>
+
+<h2>無料版と Pro版</h2>
+<table>
+<tr><th></th><th>無料</th><th>Pro（買い切り）</th></tr>
+<tr><td>救急隊に見せる画面・119番の補助・救急相談・問診票・書き写しガイド・ロック画面用の画像</td><td class="c">○</td><td class="c">○</td></tr>
+<tr><td>家族の分も登録</td><td class="c">1人</td><td class="c">○</td></tr>
+<tr><td>ロック画面に自動で反映</td><td class="c">―</td><td class="c">○</td></tr>
+<tr><td>いつもの体力の記録（立ち上がり・片足立ち・歩く速さ）</td><td class="c">―</td><td class="c">○</td></tr>
+</table>
+
+<h2>データはスマホの中だけ</h2>
+<p>登録した情報はこの端末の中だけに保存し、サーバーには送りません。アカウント登録も、広告もありません。くわしくは<a href="privacy.html" data-keep>プライバシーポリシー</a>をご覧ください。</p>
+
+<h2>ダウンロード</h2>
+<div class="dl"><span>App Store（準備中）</span><span>Google Play（準備中）</span></div>
+<p class="note">iPhone・iPad（iOS 16 以降）／Android 8.0 以降。日本国内向け（画面は日本語のみ）。</p>
+
+<h2>ご注意</h2>
+<p class="note">ALDECARE は、情報の記録・共有と目安の表示のためのもので、医療機器ではありません。病気の診断はしません。受診の判断は医師にご相談ください。命に関わるときは、迷わず119番に電話してください。</p>
+</section>
+
+<section data-l="en">
+<div class="hero">
+  <img src="icon.png" alt="ALDECARE icon">
+  <div><h1><b>A</b>LDECARE</h1><div class="st">Family emergency information</div></div>
+</div>
+<div class="tag">When someone falls ill,<br><b>tell paramedics who they are.</b></div>
+<p>ALDECARE keeps your family's emergency information — conditions, medications, allergies, usual condition and contacts — ready to show paramedics. The app is for use in Japan and its screens are in Japanese only.</p>
+
+<h2>Features</h2>
+<div class="grid">
+  <div class="card"><h3>Show paramedics</h3><p>Conditions, medications (including over-the-counter drugs), allergies, doctor and emergency contacts in large text.</p></div>
+  <div class="card"><h3>The person's usual condition</h3><p>Usual speech, walking and memory, normal temperature, the last time they were well, and their wishes about life-sustaining treatment.</p></div>
+  <div class="card"><h3>On the lock screen</h3><p>Paramedics can see the information without unlocking the phone. You choose which items to show.</p></div>
+  <div class="card"><h3>Help with 119 calls</h3><p>Shows what to say, in order, and reads it aloud — even in silent mode.</p></div>
+  <div class="card"><h3>Medical consultation lines</h3><p>Call your prefecture's #7119 (adults) or #8000 (children) line when you are unsure whether to call an ambulance.</p></div>
+  <div class="card"><h3>Questionnaires and paper kits</h3><p>Copy your information onto hospital questionnaires or your city's emergency medical information kit.</p></div>
+</div>
+
+<h2>Free and Pro</h2>
+<table>
+<tr><th></th><th>Free</th><th>Pro (one-time purchase)</th></tr>
+<tr><td>Screen for paramedics, 119 help, consultation lines, questionnaire, transcription guide, lock screen image</td><td class="c">✓</td><td class="c">✓</td></tr>
+<tr><td>Family members</td><td class="c">1 person</td><td class="c">✓</td></tr>
+<tr><td>Update the lock screen automatically</td><td class="c">—</td><td class="c">✓</td></tr>
+<tr><td>Usual fitness records (chair stands, one-leg stand, walking speed)</td><td class="c">—</td><td class="c">✓</td></tr>
+</table>
+
+<h2>Your data stays on your phone</h2>
+<p>Everything you enter is stored only on your device and never sent to a server. No account, no ads. See the <a href="privacy.html" data-keep>Privacy Policy</a>.</p>
+
+<h2>Download</h2>
+<div class="dl"><span>App Store (coming soon)</span><span>Google Play (coming soon)</span></div>
+<p class="note">iPhone / iPad (iOS 16 or later), Android 8.0 or later. For use in Japan (Japanese only).</p>
+
+<h2>Please note</h2>
+<p class="note">ALDECARE is for recording and sharing information and showing reference values. It is not a medical device and does not diagnose illness. In a life-threatening emergency, call 119 right away.</p>
+</section>
+</main>
+<footer>© 2026 Alcyline — ALDECARE　｜　<a href="support.html" data-keep>Support</a>　｜　<a href="privacy.html" data-keep>Privacy</a>　｜　<a href="mailto:alcylineapps@gmail.com">alcylineapps@gmail.com</a>　｜　Developed by Tadashi</footer>
+<script>
+  function setLang(){
+    var en = location.hash === '#en';
+    document.body.className = en ? 'en' : 'ja';
+    document.documentElement.lang = en ? 'en' : 'ja';
+    document.getElementById('lj').className = en ? '' : 'on';
+    document.getElementById('le').className = en ? 'on' : '';
+    document.querySelectorAll('a[data-keep]').forEach(function(a){ a.hash = en ? 'en' : ''; });
+  }
+  window.addEventListener('hashchange', setLang);
+  setLang();
+</script>
+</body></html>
