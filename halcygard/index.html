@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="ja"><head>
+<title>HALCYGARD — 海の安全アプリ / Sea safety app</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root{--bg:#0C1E2C;--panel:#12293A;--panel2:#1A3A50;--line:#2C4E66;--text:#EEF4F6;--sub:#9BB3C2;--accent:#FF8A3D;--water:#2EC4D6;--danger:#E2492F}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;line-height:1.8}
+  header{padding:22px 20px 16px;border-bottom:1px solid var(--line)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:900;letter-spacing:.16em;font-size:20px}
+  .brand img{width:36px;height:36px;border-radius:9px}
+  .brand b{color:var(--accent)}
+  nav.pages{display:flex;gap:14px;margin-left:auto;font-size:14px}
+  nav.pages a{color:var(--sub);text-decoration:none}
+  nav.pages a.on{color:var(--accent);font-weight:700}
+  .lang{display:flex;gap:8px;margin-top:14px}
+  .lang a{color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 14px;font-size:13px;font-weight:700}
+  .lang a.on{background:var(--accent);border-color:var(--accent);color:#1d1206}
+  main{padding:10px 0 50px}
+  h1{font-size:28px;margin:10px 0 4px}
+  h2{font-size:19px;margin:34px 0 10px;padding-left:10px;border-left:4px solid var(--accent)}
+  h3{font-size:16px;margin:0 0 4px}
+  p,li{font-size:15.5px}
+  ul{padding-left:1.3em}
+  a{color:#7FD3FF}
+  .note{color:var(--sub);font-size:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .hero{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:18px}
+  .hero img{width:120px;height:120px;border-radius:26px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+  .tag{color:var(--water);font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14.5px}
+  th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  th{background:var(--panel)} td.c{text-align:center}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
+  summary{cursor:pointer;font-weight:700}
+  details p,details ul{margin:8px 0 2px}
+  .shots{display:flex;gap:12px;overflow-x:auto;padding:6px 0}
+  .shots img{height:420px;border-radius:14px}
+  footer{border-top:1px solid var(--line);padding:18px 20px;color:var(--sub);font-size:13px;text-align:center}
+  footer a{color:var(--sub)}
+  [data-l]{display:none}
+  body.ja [data-l="ja"],body.en [data-l="en"]{display:block}
+</style>
+</head><body class="ja">
+<header><div class="wrap">
+ <div class="top"><a class="brand" href="./"><img src="icon.png" alt="">HALCY<b>GARD</b></a>
+  <nav class="pages"><a href="./" class="on"><span data-l="ja">ホーム</span><span data-l="en">Home</span></a><a href="support.html" class=""><span data-l="ja">サポート</span><span data-l="en">Support</span></a><a href="privacy.html"><span data-l="ja">プライバシー</span><span data-l="en">Privacy</span></a></nav></div>
+ <div class="lang"><a href="#ja" id="lj" class="on">日本語</a><a href="#en" id="le">English</a></div>
+</div></header>
+<main class="wrap">
+<div data-l="ja"><div class="hero"><img src="icon.png" alt=""><div><h1>HALCYGARD</h1><div class="tag">海の安全アプリ — 海水浴・潮干狩り・釣りを、もっと安全に</div>
+<p class="note">iPhone・iPad・Android／日本語・英語　｜　App Store・Google Play で配信予定</p></div></div>
+<div class="shots"><img src="shots/ja_1.png" alt=""><img src="shots/ja_2.png" alt=""><img src="shots/ja_3.png" alt=""><img src="shots/ja_4.png" alt=""><img src="shots/ja_5.png" alt=""><img src="shots/ja_6.png" alt=""></div>
+<h2>できること</h2>
+<div class="grid">
+<div class="card"><h3>🌊 潮見表（圏外でもOK）</h3><p>全国239か所の満潮・干潮を、気象庁の潮位表をもとにグラフで。1年分を端末に保存します。</p></div>
+<div class="card"><h3>🪼 危険な生き物と応急処置</h3><p>クラゲ・カツオノエボシ・ヒョウモンダコ・アカエイ・離岸流など。見分け方のイラストと「酢を使う／使わない」をはっきり。</p></div>
+<div class="card"><h3>📷 写真で調べる</h3><p>写真と質問で、似た生き物を見分けます（圏外OK）。Pro版はAIでも調べられます。</p></div>
+<div class="card"><h3>🆘 SOS</h3><p>現在地つきのSOSを家族へ。118（海の事故）・119・110への発信、笛、ライトのSOS点滅。</p></div>
+<div class="card"><h3>🏖 / 🎣 2つのモード</h3><p>潮干狩りの時間の目安と「戻る時間」のお知らせ、釣りの朝まずめ・夕まずめと潮が動く時間。</p></div>
+<div class="card"><h3>🗺 危険マップ・見守り</h3><p>離岸流やクラゲを記録して共有。出かける予定と「戻った」を家族に知らせます。</p></div>
+</div>
+<h2>Free版とPro版</h2>
+<table><tr><th></th><th>Free</th><th>Pro（買い切り）</th></tr>
+<tr><td>危険な生き物の辞書・応急処置・写真で調べる（質問）・今日と明日の潮見表・道具・SOS</td><td class="c">○</td><td class="c">○</td></tr>
+<tr><td>オフライン地図・オフラインレーダー</td><td></td><td class="c">○</td></tr>
+<tr><td>30日の潮見表</td><td></td><td class="c">○</td></tr>
+<tr><td>AIで調べる（1日5回まで・欧州では利用できません）</td><td></td><td class="c">○</td></tr>
+<tr><td>見守り（出発・帰宅の連絡、位置共有、安全確認）・移動の記録</td><td></td><td class="c">○</td></tr></table>
+<h2>Alcyline の安全アプリ</h2>
+<p><b>TAYGARD</b>（山の安全）・<b>MEROPE</b>（家族の防災）・<b>HALCYGARD</b>（海の安全）</p>
+<p class="note">応急処置の説明は一般的な目安で、医療の代わりにはなりません。命に関わるときは緊急通報を優先してください。</p></div>
+<div data-l="en"><div class="hero"><img src="icon.png" alt=""><div><h1>HALCYGARD</h1><div class="tag">Sea safety for beach days, clam digging and fishing</div>
+<p class="note">iPhone, iPad & Android · English & Japanese · Coming to the App Store and Google Play</p></div></div>
+<div class="shots"><img src="shots/en_1.png" alt=""><img src="shots/en_2.png" alt=""><img src="shots/en_3.png" alt=""><img src="shots/en_4.png" alt=""><img src="shots/en_5.png" alt=""><img src="shots/en_6.png" alt=""></div>
+<h2>Features</h2>
+<div class="grid">
+<div class="card"><h3>🌊 Offline tide tables</h3><p>High and low tides for 239 stations across Japan, based on Japan Meteorological Agency tables. A full year is saved on your device.</p></div>
+<div class="card"><h3>🪼 Sea hazards & first aid</h3><p>Jellyfish, man o' war, box jellyfish, blue-ringed octopus, stingrays, rip currents and more, with illustrated ID and clear vinegar / no-vinegar labels.</p></div>
+<div class="card"><h3>📷 Identify from a photo</h3><p>Tell look-alikes apart with a photo and a few questions — even offline. AI check with Pro.</p></div>
+<div class="card"><h3>🆘 SOS</h3><p>SOS with your location to your family, emergency call buttons, a whistle and an SOS light.</p></div>
+<div class="card"><h3>🏖 / 🎣 Two modes</h3><p>Clam-digging windows and a head-back reminder; morning and evening bites and moving-water times for fishing.</p></div>
+<div class="card"><h3>🗺 Hazard map & watch</h3><p>Report rip currents and jellyfish, and let your family know your plans and when you're back.</p></div>
+</div>
+<h2>Free and Pro</h2>
+<table><tr><th></th><th>Free</th><th>Pro (one-time)</th></tr>
+<tr><td>Hazard guide, first aid, photo ID by questions, today's & tomorrow's tides, tools, SOS</td><td class="c">✓</td><td class="c">✓</td></tr>
+<tr><td>Offline maps and radar</td><td></td><td class="c">✓</td></tr>
+<tr><td>30-day tide tables</td><td></td><td class="c">✓</td></tr>
+<tr><td>AI photo check (5 per day; not available in Europe)</td><td></td><td class="c">✓</td></tr>
+<tr><td>Watch features and track recording</td><td></td><td class="c">✓</td></tr></table>
+<h2>Safety apps by Alcyline</h2>
+<p><b>TAYGARD</b> (mountains) · <b>MEROPE</b> (family preparedness) · <b>HALCYGARD</b> (the sea)</p>
+<p class="note">First aid information is general guidance and not a substitute for medical care. In an emergency, call your emergency number first.</p></div>
+</main>
+<footer>© 2026 Alcyline — HALCYGARD ・ <a href="../">Alcyline のアプリ / Apps by Alcyline</a></footer>
+<script>
+  function setLang(){var en=location.hash==='#en'||(!location.hash&&!/^ja/i.test(navigator.language||''));
+    document.body.className=en?'en':'ja';document.documentElement.lang=en?'en':'ja';
+    document.getElementById('lj').className=en?'':'on';document.getElementById('le').className=en?'on':'';}
+  window.addEventListener('hashchange',setLang);setLang();
+</script>
+</body></html>
