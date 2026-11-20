@@ -138,7 +138,7 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
     <div class="flow">
       <div><b>STEP 1</b><span>仕入れる前に</span><p>相場と過去の売れ行きから、買うかどうかを判定。</p></div>
       <div><b>STEP 2</b><span>在庫を持ったら</span><p>写真つきで登録。CSV でまとめて取り込みも。</p></div>
-      <div><b>STEP 3</b><span>売れ残ったら</span><p>30・60・90日で通知。赤字にならない値下げ提案。</p></div>
+      <div><b>STEP 3</b><span>売れ残ったら</span><p>決めた日数で通知。赤字にならない値下げ提案。</p></div>
       <div><b>STEP 4</b><span>年末には</span><p>収支レポートと棚卸表を PDF で印刷。</p></div>
     </div>
   </div>
@@ -161,7 +161,7 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
     <div class="feature">
       <div>
         <h3>売れ残りアラート<span class="pro">PRO</span></h3>
-        <p>仕入れから30日・60日・90日たっても売れていない在庫を、朝9時に通知でお知らせします。値下げの価格は、赤字にならない下限より下げずに提案します。</p>
+        <p>仕入れから一定の日数たっても売れていない在庫を、3段階で朝9時に通知します。日数と値下げ率は自分で決められます（初期値は30・60・90日／5・10・15%）。値下げの価格は、赤字にならない下限より下げずに提案します。</p>
         <ul><li>「提案価格にする」ボタンで、そのまま売価を更新</li><li>ほかの販路への出品も、段階に合わせてアドバイス</li></ul>
       </div>
       <div class="shot"><img src="img/02_stale_alert.jpg" alt="売れ残りアラートの画面" loading="lazy"></div>
@@ -187,7 +187,7 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
     <div class="feature">
       <div>
         <h3>利益計算<span class="free">無料</span></h3>
-        <p>仕入価格・売却価格・送料を入れるだけで、販売手数料を引いた利益・利益率・ROI をすぐ表示。販路ごとの利益を並べて比べたり、ほしい利益から売価を逆算したりできます。</p>
+        <p>仕入価格・売却価格・送料を入れるだけで、販売手数料を引いた利益・利益率・ROI をすぐ表示。販路ごとの利益を並べて比べたり、ほしい利益から売価を逆算したりできます。販路は自由に追加・削除でき、手数料率も設定できます。</p>
       </div>
       <div class="shot"><img src="img/05_profit_calc.jpg" alt="利益計算の画面" loading="lazy"></div>
     </div>
@@ -225,7 +225,7 @@ footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:10px}
         <p class="price">¥7,000<small> / 年（月あたり約583円）</small></p>
         <ul>
           <li>仕入れ判定</li>
-          <li>売れ残りアラート（30・60・90日、値下げ提案）</li>
+          <li>売れ残りアラート（日数・値下げ率を設定できる値下げ提案）</li>
           <li>ROI分析・ランキング</li>
           <li>月次レポート・確定申告用の収支レポート（PDF・印刷）</li>
           <li>写真から型番を読み取って登録</li>
