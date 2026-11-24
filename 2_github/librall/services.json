@@ -1,0 +1,1060 @@
+{
+  "version": 1,
+  "updated": "2026-11-24",
+  "services": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "icon": "🎬",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.netflix.com/jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ネットフリックス",
+        "ネトフリ"
+      ]
+    },
+    {
+      "id": "amazon-prime",
+      "name": "Amazonプライム",
+      "icon": "📦",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.amazon.co.jp/amazonprime",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アマゾン",
+        "プライムビデオ",
+        "amazon prime",
+        "アマプラ"
+      ]
+    },
+    {
+      "id": "unext",
+      "name": "U-NEXT",
+      "icon": "🎞️",
+      "category": "動画",
+      "source": "web",
+      "url": "https://video.unext.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ユーネクスト",
+        "unext"
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "icon": "📺",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.hulu.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "フールー"
+      ]
+    },
+    {
+      "id": "disneyplus",
+      "name": "Disney+",
+      "icon": "🏰",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.disneyplus.com/ja-jp",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ディズニープラス",
+        "ディズニー"
+      ]
+    },
+    {
+      "id": "abema",
+      "name": "ABEMAプレミアム",
+      "icon": "📺",
+      "category": "動画",
+      "source": "web",
+      "url": "https://abema.tv/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アベマ",
+        "abema"
+      ]
+    },
+    {
+      "id": "dazn",
+      "name": "DAZN",
+      "icon": "⚽️",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.dazn.com/ja-JP",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ダゾーン"
+      ]
+    },
+    {
+      "id": "lemino",
+      "name": "Lemino",
+      "icon": "📱",
+      "category": "動画",
+      "source": "web",
+      "url": "https://lemino.docomo.ne.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "レミノ",
+        "ドコモ"
+      ]
+    },
+    {
+      "id": "telasa",
+      "name": "TELASA",
+      "icon": "📺",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.telasa.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "テラサ"
+      ]
+    },
+    {
+      "id": "fod",
+      "name": "FODプレミアム",
+      "icon": "📺",
+      "category": "動画",
+      "source": "web",
+      "url": "https://fod.fujitv.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "フジテレビ",
+        "エフオーディー"
+      ]
+    },
+    {
+      "id": "danime",
+      "name": "dアニメストア",
+      "icon": "🌸",
+      "category": "動画",
+      "source": "web",
+      "url": "https://animestore.docomo.ne.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ディーアニメ",
+        "アニメ"
+      ]
+    },
+    {
+      "id": "dmmtv",
+      "name": "DMM TV",
+      "icon": "📺",
+      "category": "動画",
+      "source": "web",
+      "url": "https://tv.dmm.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ディーエムエム"
+      ]
+    },
+    {
+      "id": "wowow",
+      "name": "WOWOWオンデマンド",
+      "icon": "📡",
+      "category": "動画",
+      "source": "web",
+      "url": "https://wod.wowow.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ワウワウ"
+      ]
+    },
+    {
+      "id": "nhk-od",
+      "name": "NHKオンデマンド",
+      "icon": "📡",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.nhk-ondemand.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "エヌエイチケー"
+      ]
+    },
+    {
+      "id": "youtube-premium",
+      "name": "YouTube Premium",
+      "icon": "▶️",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.youtube.com/premium",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ユーチューブ",
+        "youtube",
+        "ようつべ"
+      ]
+    },
+    {
+      "id": "appletv",
+      "name": "Apple TV",
+      "icon": "🍎",
+      "category": "動画",
+      "source": "appStore",
+      "url": "https://tv.apple.com/jp",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アップルティービー",
+        "apple tv+"
+      ]
+    },
+    {
+      "id": "skyperfectv",
+      "name": "スカパー！",
+      "icon": "📡",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.skyperfectv.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "スカパー"
+      ]
+    },
+    {
+      "id": "niconico",
+      "name": "ニコニコプレミアム",
+      "icon": "💬",
+      "category": "動画",
+      "source": "web",
+      "url": "https://www.nicovideo.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ニコニコ動画",
+        "ニコ動"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "icon": "🎵",
+      "category": "音楽・ラジオ",
+      "source": "web",
+      "url": "https://www.spotify.com/jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "スポティファイ",
+        "スポティファイ"
+      ]
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "icon": "🎵",
+      "category": "音楽・ラジオ",
+      "source": "appStore",
+      "url": "https://www.apple.com/jp/apple-music/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アップルミュージック"
+      ]
+    },
+    {
+      "id": "amazon-music",
+      "name": "Amazon Music Unlimited",
+      "icon": "🎶",
+      "category": "音楽・ラジオ",
+      "source": "web",
+      "url": "https://www.amazon.co.jp/music/unlimited",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アマゾンミュージック"
+      ]
+    },
+    {
+      "id": "youtube-music",
+      "name": "YouTube Music",
+      "icon": "🎶",
+      "category": "音楽・ラジオ",
+      "source": "web",
+      "url": "https://music.youtube.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ユーチューブミュージック"
+      ]
+    },
+    {
+      "id": "line-music",
+      "name": "LINE MUSIC",
+      "icon": "🎶",
+      "category": "音楽・ラジオ",
+      "source": "appStore",
+      "url": "https://music.line.me/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ラインミュージック"
+      ]
+    },
+    {
+      "id": "awa",
+      "name": "AWA",
+      "icon": "🎧",
+      "category": "音楽・ラジオ",
+      "source": "web",
+      "url": "https://awa.fm/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アワ"
+      ]
+    },
+    {
+      "id": "radiko",
+      "name": "radikoプレミアム",
+      "icon": "📻",
+      "category": "音楽・ラジオ",
+      "source": "web",
+      "url": "https://radiko.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ラジコ"
+      ]
+    },
+    {
+      "id": "kindle-unlimited",
+      "name": "Kindle Unlimited",
+      "icon": "📚",
+      "category": "本・雑誌・ニュース",
+      "source": "web",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "キンドル",
+        "アンリミテッド"
+      ]
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "icon": "🎧",
+      "category": "本・雑誌・ニュース",
+      "source": "web",
+      "url": "https://www.audible.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "オーディブル"
+      ]
+    },
+    {
+      "id": "rakuten-magazine",
+      "name": "楽天マガジン",
+      "icon": "📰",
+      "category": "本・雑誌・ニュース",
+      "source": "web",
+      "url": "https://magazine.rakuten.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "らくてん"
+      ]
+    },
+    {
+      "id": "dmagazine",
+      "name": "dマガジン",
+      "icon": "📰",
+      "category": "本・雑誌・ニュース",
+      "source": "web",
+      "url": "https://magazine.dmkt-sp.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ディーマガジン"
+      ]
+    },
+    {
+      "id": "nikkei",
+      "name": "日経電子版",
+      "icon": "📰",
+      "category": "本・雑誌・ニュース",
+      "source": "web",
+      "url": "https://www.nikkei.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "日経",
+        "にっけい"
+      ]
+    },
+    {
+      "id": "asahi-digital",
+      "name": "朝日新聞デジタル",
+      "icon": "📰",
+      "category": "本・雑誌・ニュース",
+      "source": "web",
+      "url": "https://digital.asahi.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "朝日",
+        "あさひ"
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud+",
+      "icon": "☁️",
+      "category": "クラウド・仕事",
+      "source": "appStore",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アイクラウド"
+      ]
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "icon": "☁️",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://one.google.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "グーグルワン",
+        "グーグル"
+      ]
+    },
+    {
+      "id": "m365",
+      "name": "Microsoft 365",
+      "icon": "💼",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://www.microsoft.com/ja-jp/microsoft-365",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "マイクロソフト",
+        "オフィス",
+        "office"
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "icon": "📦",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://www.dropbox.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ドロップボックス"
+      ]
+    },
+    {
+      "id": "adobe-cc",
+      "name": "Adobe Creative Cloud",
+      "icon": "🎨",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://www.adobe.com/jp/creativecloud.html",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アドビ",
+        "フォトショップ",
+        "photoshop"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva Pro",
+      "icon": "🎨",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://www.canva.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "キャンバ"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "icon": "📝",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://www.notion.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ノーション"
+      ]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "icon": "🐘",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://evernote.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "エバーノート"
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "icon": "🎥",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://zoom.us/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ズーム"
+      ]
+    },
+    {
+      "id": "norton",
+      "name": "ノートン",
+      "icon": "🛡️",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://jp.norton.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ウイルス対策",
+        "セキュリティ"
+      ]
+    },
+    {
+      "id": "virusbuster",
+      "name": "ウイルスバスター",
+      "icon": "🛡️",
+      "category": "クラウド・仕事",
+      "source": "web",
+      "url": "https://www.trendmicro.com/ja_jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ウイルス対策",
+        "トレンドマイクロ"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT Plus",
+      "icon": "🤖",
+      "category": "AI",
+      "source": "web",
+      "url": "https://chatgpt.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "チャットジーピーティー",
+        "openai"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude Pro",
+      "icon": "🤖",
+      "category": "AI",
+      "source": "web",
+      "url": "https://claude.ai/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "クロード",
+        "anthropic"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Google AI Pro（Gemini）",
+      "icon": "🤖",
+      "category": "AI",
+      "source": "web",
+      "url": "https://gemini.google.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ジェミニ",
+        "gemini"
+      ]
+    },
+    {
+      "id": "switch-online",
+      "name": "Nintendo Switch Online",
+      "icon": "🎮",
+      "category": "ゲーム",
+      "source": "web",
+      "url": "https://www.nintendo.com/jp/hardware/switch/onlineservice/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "任天堂",
+        "スイッチ"
+      ]
+    },
+    {
+      "id": "ps-plus",
+      "name": "PlayStation Plus",
+      "icon": "🎮",
+      "category": "ゲーム",
+      "source": "web",
+      "url": "https://www.playstation.com/ja-jp/ps-plus/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "プレステ",
+        "プレイステーション",
+        "psplus"
+      ]
+    },
+    {
+      "id": "gamepass",
+      "name": "Xbox Game Pass",
+      "icon": "🎮",
+      "category": "ゲーム",
+      "source": "web",
+      "url": "https://www.xbox.com/ja-JP/xbox-game-pass",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "エックスボックス",
+        "ゲームパス"
+      ]
+    },
+    {
+      "id": "apple-arcade",
+      "name": "Apple Arcade",
+      "icon": "🕹️",
+      "category": "ゲーム",
+      "source": "appStore",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アップルアーケード"
+      ]
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "icon": "🦉",
+      "category": "学び",
+      "source": "web",
+      "url": "https://www.duolingo.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "デュオリンゴ",
+        "英語"
+      ]
+    },
+    {
+      "id": "studysapuri",
+      "name": "スタディサプリ",
+      "icon": "✏️",
+      "category": "学び",
+      "source": "web",
+      "url": "https://studysapuri.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "すたさぷ"
+      ]
+    },
+    {
+      "id": "shinken",
+      "name": "進研ゼミ",
+      "icon": "✏️",
+      "category": "学び",
+      "source": "web",
+      "url": "https://sho.benesse.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ベネッセ",
+        "しんけんぜみ"
+      ]
+    },
+    {
+      "id": "chocozap",
+      "name": "chocoZAP",
+      "icon": "🏋️",
+      "category": "生活・健康",
+      "source": "web",
+      "url": "https://chocozap.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "チョコザップ",
+        "ジム"
+      ]
+    },
+    {
+      "id": "anytime",
+      "name": "エニタイムフィットネス",
+      "icon": "🏋️",
+      "category": "生活・健康",
+      "source": "web",
+      "url": "https://www.anytimefitness.co.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "えにたいむ",
+        "ジム"
+      ]
+    },
+    {
+      "id": "asken",
+      "name": "あすけん",
+      "icon": "🥗",
+      "category": "生活・健康",
+      "source": "web",
+      "url": "https://www.asken.jp/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "アスケン",
+        "ダイエット"
+      ]
+    },
+    {
+      "id": "cookpad",
+      "name": "クックパッド プレミアム",
+      "icon": "🍳",
+      "category": "生活・健康",
+      "source": "web",
+      "url": "https://cookpad.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "くっくぱっど",
+        "レシピ"
+      ]
+    },
+    {
+      "id": "oisix",
+      "name": "Oisix",
+      "icon": "🥕",
+      "category": "生活・健康",
+      "source": "web",
+      "url": "https://www.oisix.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "オイシックス",
+        "食材宅配"
+      ]
+    },
+    {
+      "id": "moneyforward",
+      "name": "マネーフォワード ME",
+      "icon": "💰",
+      "category": "生活・健康",
+      "source": "web",
+      "url": "https://moneyforward.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "マネフォ",
+        "家計簿"
+      ]
+    },
+    {
+      "id": "line-stamp",
+      "name": "LINEスタンプ プレミアム",
+      "icon": "💬",
+      "category": "生活・健康",
+      "source": "appStore",
+      "url": "https://store.line.me/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "ラインスタンプ"
+      ]
+    },
+    {
+      "id": "gym-lesson",
+      "name": "ジム・習い事",
+      "icon": "🏃",
+      "category": "その他",
+      "source": "other",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "スクール",
+        "教室"
+      ]
+    },
+    {
+      "id": "carrier-option",
+      "name": "携帯のオプション",
+      "icon": "📱",
+      "category": "その他",
+      "source": "carrier",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "キャリア",
+        "ドコモ",
+        "au",
+        "ソフトバンク"
+      ]
+    },
+    {
+      "id": "newspaper",
+      "name": "新聞（紙）",
+      "icon": "🗞️",
+      "category": "その他",
+      "source": "other",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "しんぶん"
+      ]
+    },
+    {
+      "id": "delivery",
+      "name": "定期便・宅配",
+      "icon": "🚚",
+      "category": "その他",
+      "source": "other",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "定期購入",
+        "サプリ",
+        "水"
+      ]
+    }
+  ]
+}

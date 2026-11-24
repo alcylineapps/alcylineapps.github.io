@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LIBRALL｜サブスク解約忘れ防止アプリ / Subscription Reminder - Support & Privacy</title>
+<meta name="description" content="LIBRALL（リブラル）はサブスクの無料期間終了と課金日を知らせ、解約方法まで案内するiPhoneアプリです。">
+<style>
+  :root{
+    --night:#121738; --indigo:#544fd6; --gold:#f5b84d; --coral:#ff666b; --mint:#29b880;
+    --text:#1d1f2e; --sub:#5d6077; --card:#ffffff; --bg:#f3f3f8;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --text:#ececf4; --sub:#a4a6bd; --card:#1d1f33; --bg:#0d0f22; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.8}
+  header{background:linear-gradient(135deg,var(--night),#332b85 55%,var(--indigo));color:#fff;
+         padding:56px 20px 64px;text-align:center;position:relative;overflow:hidden}
+  header::before{content:"";position:absolute;inset:0;
+    background-image:radial-gradient(2px 2px at 12% 20%,#fff9,transparent),radial-gradient(1.5px 1.5px at 30% 70%,#fff8,transparent),
+    radial-gradient(2px 2px at 55% 30%,#fffa,transparent),radial-gradient(1.5px 1.5px at 75% 60%,#fff7,transparent),
+    radial-gradient(2px 2px at 88% 25%,#fff9,transparent),radial-gradient(1.5px 1.5px at 45% 85%,#fff6,transparent),
+    radial-gradient(1.5px 1.5px at 92% 82%,#fff8,transparent),radial-gradient(2px 2px at 5% 75%,#fff7,transparent)}
+  header::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+    border:1px solid #f5b84d44;right:-180px;top:-260px}
+  header *{position:relative}
+  .libra{width:150px;height:150px;display:block;margin:0 auto 4px;overflow:visible}
+  .libra .g{fill:var(--gold)} .libra .st{stroke:var(--gold);stroke-width:3;stroke-linecap:round;fill:none}
+  .libra .glow{fill:var(--gold);opacity:.12;filter:blur(18px);animation:glow 3.2s ease-in-out .9s infinite alternate}
+  .libra .pillar{transform-origin:100px 170px;animation:grow .45s ease-out both}
+  .libra .arm{transform-origin:100px 70px;animation:swing 2.2s cubic-bezier(.3,.6,.3,1) .25s both}
+  .libra .pan{animation:fade .4s ease-out .2s both}
+  .libra .star{transform-origin:100px 50px;transform-box:view-box;animation:pop .7s cubic-bezier(.3,1.6,.5,1) .55s both}
+  @keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  @keyframes swing{0%{transform:rotate(-16deg)}25%{transform:rotate(11deg)}45%{transform:rotate(-6deg)}65%{transform:rotate(3deg)}82%{transform:rotate(-1deg)}100%{transform:rotate(0)}}
+  @keyframes pop{from{transform:scale(0) rotate(-144deg)}to{transform:scale(1) rotate(0)}}
+  @keyframes glow{to{opacity:.32}}
+  @media (prefers-reduced-motion: reduce){.libra *{animation:none!important}}
+  header p{color:#fff}
+  .logo{font-size:44px;font-weight:900;letter-spacing:.08em;margin:0}
+  .logo span{color:var(--gold)}
+  .tag{margin:6px 0 0;opacity:.85}
+  main{max-width:760px;margin:-32px auto 40px;padding:0 16px}
+  section{background:var(--card);border-radius:22px;padding:24px 24px 20px;margin-bottom:18px;
+          box-shadow:0 6px 24px #0000000f}
+  h2{margin:0 0 12px;font-size:20px;display:flex;align-items:center;gap:10px}
+  h2 .dot{width:10px;height:10px;border-radius:50%;background:var(--indigo)}
+  h3{font-size:16px;margin:20px 0 6px}
+  p,li{color:var(--sub);margin:6px 0}
+  ul{padding-left:1.2em}
+  .feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:8px}
+  .feat div{border-radius:16px;padding:14px 16px;background:color-mix(in srgb,var(--indigo) 9%,transparent)}
+  .feat b{display:block;color:var(--text)}
+  .mail{display:inline-block;margin-top:6px;padding:12px 20px;border-radius:14px;color:#fff;text-decoration:none;
+        font-weight:700;background:linear-gradient(90deg,var(--indigo),#8059f5)}
+  .muted{font-size:13px}
+  footer{text-align:center;color:var(--sub);font-size:13px;padding:10px 0 40px}
+  nav{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+  nav a{color:#fff;text-decoration:none;font-size:14px;padding:6px 14px;border-radius:999px;background:#ffffff22}
+  html[data-lang="en"] .ja, html[data-lang="ja"] .en{display:none!important}
+  .lang{position:absolute;top:14px;right:14px;z-index:2;display:flex;gap:4px;background:#ffffff1f;border-radius:999px;padding:3px}
+  .lang button{border:0;background:transparent;color:#fff;font-weight:700;font-size:13px;padding:5px 12px;border-radius:999px;cursor:pointer}
+  html[data-lang="ja"] .lang .b-ja, html[data-lang="en"] .lang .b-en{background:#fff;color:#332b85}
+</style>
+</head>
+<body>
+<header>
+  <div class="lang"><button class="b-ja" onclick="setLang('ja')">日本語</button><button class="b-en" onclick="setLang('en')">English</button></div>
+  <svg class="libra" viewBox="0 0 200 200" aria-hidden="true">
+    <circle class="glow" cx="100" cy="100" r="70"/>
+    <g class="pillar"><rect class="g" x="95.5" y="62" width="9" height="108" rx="4.5"/><rect class="g" x="58" y="166" width="84" height="11" rx="5.5"/></g>
+    <g class="arm">
+      <rect class="g" x="26" y="65.5" width="148" height="9" rx="4.5"/>
+      <g class="pan"><path class="st" d="M30 70 L8 110 M30 70 L52 110"/><path class="g" d="M2 110 Q30 134 58 110 Z"/></g>
+      <g class="pan"><path class="st" d="M170 70 L148 110 M170 70 L192 110"/><path class="g" d="M142 110 Q170 134 198 110 Z"/></g>
+    </g>
+    <path class="g star" d="M100 33 L104.6 44.2 L116.2 44.8 L107.2 52.4 L110.2 63.6 L100 57.4 L89.8 63.6 L92.8 52.4 L83.8 44.8 L95.4 44.2 Z"/>
+  </svg>
+  <p class="logo">LIBR<span>A</span>LL</p>
+  <p class="tag"><span class="ja">無料体験の終わりを、もう忘れない。</span><span class="en">Never miss the end of a free trial again.</span></p>
+  <nav><a href="#about"><span class="ja">アプリについて</span><span class="en">About</span></a><a href="#support"><span class="ja">サポート</span><span class="en">Support</span></a><a href="#privacy"><span class="ja">プライバシーポリシー</span><span class="en">Privacy Policy</span></a></nav>
+</header>
+
+<main>
+  <section id="about">
+<div class="ja">
+    <h2><span class="dot"></span>LIBRALL（リブラル）とは</h2>
+    <p>サブスクの無料期間の終わりと課金日をお知らせし、解約の方法まで案内するiPhoneアプリです。アカウント登録や銀行連携は不要で、データはiPhoneの中だけに保存されます。</p>
+    <div class="feat">
+      <div><b>⏰ 終了前にお知らせ</b>無料期間の3日前・前日・当日、課金日の前日に通知</div>
+      <div><b>🧭 解約ナビ</b>契約した場所ごとの解約手順と解約ページへの案内</div>
+      <div><b>🔍 かんたん登録</b>主要な60以上のサービスから選ぶだけ</div>
+      <div><b>✂️ 見直し</b>使っていないサブスクを解約候補としてお知らせ</div>
+    </div>
+  </div>
+<div class="en">
+    <h2><span class="dot"></span>What is LIBRALL?</h2>
+    <p>LIBRALL is an iPhone app that reminds you before free trials end and before you’re billed — and shows you exactly how to cancel. No account, no bank connection. Your data stays on your iPhone.</p>
+    <div class="feat">
+      <div><b>⏰ Reminders before you’re charged</b>3 days before, the day before, and on the last day of a free trial — plus the day before each billing date</div>
+      <div><b>🧭 How to cancel</b>Step-by-step cancellation guides based on where you subscribed, with a link to the cancellation page</div>
+      <div><b>🔍 Quick add</b>Pick from 60+ popular services</div>
+      <div><b>✂️ Monthly review</b>Find subscriptions you’re no longer using</div>
+    </div>
+</div>
+  </section>
+
+  <section id="support">
+<div class="ja">
+    <h2><span class="dot" style="background:var(--mint)"></span>サポート</h2>
+    <h3>よくある質問</h3>
+    <p><b>Q. 通知が届きません。</b><br>iPhoneの「設定」→「通知」→「LIBRALL」で通知が許可されているか確認してください。アプリの「設定」→「通知を設定し直す」も試してください。</p>
+    <p><b>Q. 機種変更でデータは引き継げますか？</b><br>クイックスタート、またはiCloudバックアップからの復元で引き継げます。Pro版ではバックアップファイルの書き出し・読み込みもできます。アプリの「設定」→「機種変更の準備をする」をご覧ください。</p>
+    <p><b>Q. Pro版を買い直さずに使いたい。</b><br>新しいiPhoneで「設定」→「購入を復元」を押してください（同じApple IDが必要です）。</p>
+    <p><b>Q. 解約の手順が実際の画面と違います。</b><br>各サービスの画面は予告なく変わることがあります。お手数ですが下記までお知らせください。順次更新します。</p>
+    <h3>お問い合わせ</h3>
+    <p>ご質問・不具合のご報告はメールでお願いします。</p>
+    <a class="mail" href="mailto:alcylineapps@gmail.com?subject=LIBRALL%20%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">✉️ alcylineapps@gmail.com</a>
+    <p class="muted">返信までお時間をいただく場合があります。</p>
+  </div>
+<div class="en">
+    <h2><span class="dot" style="background:var(--mint)"></span>Support</h2>
+    <h3>FAQ</h3>
+    <p><b>Q. I’m not getting notifications.</b><br>Go to iPhone Settings → Notifications → LIBRALL and make sure notifications are allowed. You can also tap Settings → “Reschedule notifications” in the app.</p>
+    <p><b>Q. Can I move my data to a new iPhone?</b><br>Yes — with Quick Start or by restoring from an iCloud Backup. Pro users can also export and import a backup file. See Settings → “Prepare for a new iPhone” in the app.</p>
+    <p><b>Q. I bought Pro. How do I get it on a new iPhone?</b><br>Tap Settings → “Restore purchase” on the new iPhone (same Apple ID required).</p>
+    <p><b>Q. The cancellation steps don’t match what I see.</b><br>Services change their websites without notice. Please let us know at the address below and we’ll update the list. You can also fix the cancellation URL for yourself in the app.</p>
+    <h3>Contact</h3>
+    <p>For questions or bug reports, please email us.</p>
+    <a class="mail" href="mailto:alcylineapps@gmail.com?subject=LIBRALL%20Support">✉️ alcylineapps@gmail.com</a>
+    <p class="muted">Replies may take a few days.</p>
+</div>
+  </section>
+
+  <section id="privacy">
+<div class="ja">
+    <h2><span class="dot" style="background:var(--gold)"></span>プライバシーポリシー</h2>
+    <p class="muted">制定日：2026年11月24日</p>
+    <p>Alcyline（以下「当方」）は、iPhoneアプリ「LIBRALL」（以下「本アプリ」）における利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+
+    <h3>1. 収集する情報</h3>
+    <p>当方は、本アプリを通じて利用者の個人情報や利用状況を収集していません。アカウント登録、広告、アクセス解析の仕組みもありません。</p>
+
+    <h3>2. 本アプリに入力した情報</h3>
+    <p>サブスクの名前・金額・日付・メモなど、利用者が入力した情報は利用者のiPhoneの中だけに保存され、当方を含む外部に送信されることはありません。アプリを削除すると、これらの情報も削除されます。</p>
+
+    <h3>3. サービス一覧の取得</h3>
+    <p>本アプリは、最新のサービス一覧を取得するため、GitHub Pages（GitHub, Inc.）上の公開ファイルを読み込みます。この通信では利用者が入力した情報は一切送信されません。なお、通信の際にGitHub社がIPアドレス等を記録する場合があり、その取り扱いは同社のプライバシーポリシーに従います。</p>
+
+    <h3>4. 通知</h3>
+    <p>お知らせはiPhoneの中で作られる「ローカル通知」で、外部のサーバーは使用していません。</p>
+
+    <h3>5. アプリ内課金</h3>
+    <p>Pro版の購入はAppleのApp Storeを通じて行われます。お支払い情報は当方に提供されません。</p>
+
+    <h3>6. 外部サイト</h3>
+    <p>本アプリから各サービスの公式サイトや検索ページを開くことがあります。開いた先での情報の取り扱いは、各サイトの方針に従います。</p>
+
+    <h3>7. バックアップファイル（Pro版）</h3>
+    <p>利用者が書き出したバックアップファイルの保存先は、利用者自身が選んだ場所（ファイルAppなど）です。当方が受け取ることはありません。</p>
+
+    <h3>8. 不具合の報告</h3>
+    <p>アプリからリンク切れなどを報告する場合、メールアプリにサービス名と表示中のURLだけが入ったメールが作られます。送るかどうかは利用者が決めます。</p>
+
+    <h3>9. 改定</h3>
+    <p>本ポリシーを変更する場合は、このページでお知らせします。</p>
+
+    <h3>10. お問い合わせ</h3>
+    <p>本ポリシーに関するお問い合わせは alcylineapps@gmail.com までお願いします。</p>
+  </div>
+<div class="en">
+    <h2><span class="dot" style="background:var(--gold)"></span>Privacy Policy</h2>
+    <p class="muted">Effective date: November 24, 2026</p>
+    <p>This policy explains how Alcyline (“we”) handles information in the iPhone app “LIBRALL” (the “App”).</p>
+    <h3>1. Information we collect</h3>
+    <p>We do not collect any personal information or usage data through the App. There are no accounts, ads, or analytics.</p>
+    <h3>2. Information you enter</h3>
+    <p>Subscription names, prices, dates, memos and other information you enter are stored only on your iPhone and are never sent to us or anyone else. Deleting the App deletes this information.</p>
+    <h3>3. Downloading the service list</h3>
+    <p>To keep the service list up to date, the App downloads a public file hosted on GitHub Pages (GitHub, Inc.). No information you entered is sent. GitHub may log technical data such as IP addresses, which is handled under GitHub’s privacy policy.</p>
+    <h3>4. Notifications</h3>
+    <p>Reminders are local notifications created on your iPhone. No external server is used.</p>
+    <h3>5. In-app purchase</h3>
+    <p>The Pro upgrade is purchased through Apple’s App Store. We do not receive your payment information.</p>
+    <h3>6. External websites</h3>
+    <p>The App may open official websites of services or search pages. Information on those sites is handled under their own policies.</p>
+    <h3>7. Backup files (Pro)</h3>
+    <p>Backup files you export are saved wherever you choose (such as the Files app). We never receive them.</p>
+    <h3>8. Reports you send</h3>
+    <p>If you choose to report a broken link, your Mail app creates an email containing only the service name and the URL shown. You decide whether to send it.</p>
+    <h3>9. Changes</h3>
+    <p>If this policy changes, we will post the update on this page.</p>
+    <h3>10. Contact</h3>
+    <p>Questions about this policy: alcylineapps@gmail.com</p>
+</div>
+  </section>
+</main>
+
+<footer>
+  LIBRALL — Developed by Tadashi / © 2026 Alcyline
+</footer>
+<script>
+  function setLang(l){document.documentElement.dataset.lang=l;document.documentElement.lang=l;
+    try{localStorage.setItem("librall-lang",l)}catch(e){}}
+  (function(){var q=new URLSearchParams(location.search).get("lang");var saved=null;
+    try{saved=localStorage.getItem("librall-lang")}catch(e){}
+    var l=q||saved||((navigator.language||"en").toLowerCase().startsWith("ja")?"ja":"en");setLang(l==="ja"?"ja":"en");})();
+</script>
+</body>
+</html>

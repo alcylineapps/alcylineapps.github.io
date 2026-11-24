@@ -1,0 +1,1026 @@
+{
+  "version": 1,
+  "updated": "2026-11-24",
+  "services": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "icon": "🎬",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.netflix.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "amazon-prime",
+      "name": "Amazon Prime",
+      "icon": "📦",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.amazon.com/amazonprime",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "prime video",
+        "amazon"
+      ]
+    },
+    {
+      "id": "disneyplus",
+      "name": "Disney+",
+      "icon": "🏰",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.disneyplus.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "disney plus",
+        "disney"
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "icon": "📺",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.hulu.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "hbo-max",
+      "name": "HBO Max",
+      "icon": "🎞️",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.hbomax.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "max",
+        "hbo"
+      ]
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "icon": "🦚",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.peacocktv.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "icon": "⛰️",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.paramountplus.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "paramount plus"
+      ]
+    },
+    {
+      "id": "appletv",
+      "name": "Apple TV",
+      "icon": "🍎",
+      "category": "Video",
+      "source": "appStore",
+      "url": "https://tv.apple.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "apple tv+",
+        "apple tv plus"
+      ]
+    },
+    {
+      "id": "youtube-premium",
+      "name": "YouTube Premium",
+      "icon": "▶️",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.youtube.com/premium",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "youtube"
+      ]
+    },
+    {
+      "id": "youtube-tv",
+      "name": "YouTube TV",
+      "icon": "📡",
+      "category": "Video",
+      "source": "web",
+      "url": "https://tv.youtube.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "sling",
+      "name": "Sling TV",
+      "icon": "📡",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.sling.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "fubo",
+      "name": "Fubo",
+      "icon": "⚽️",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.fubo.tv/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "fubotv"
+      ]
+    },
+    {
+      "id": "espn",
+      "name": "ESPN",
+      "icon": "🏈",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.espn.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "espn+",
+        "espn plus"
+      ]
+    },
+    {
+      "id": "crunchyroll",
+      "name": "Crunchyroll",
+      "icon": "🍥",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.crunchyroll.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "anime"
+      ]
+    },
+    {
+      "id": "dazn",
+      "name": "DAZN",
+      "icon": "🥊",
+      "category": "Video",
+      "source": "web",
+      "url": "https://www.dazn.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "icon": "🎵",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://www.spotify.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "apple-music",
+      "name": "Apple Music",
+      "icon": "🎵",
+      "category": "Music & Audio",
+      "source": "appStore",
+      "url": "https://www.apple.com/apple-music/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "amazon-music",
+      "name": "Amazon Music Unlimited",
+      "icon": "🎶",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://www.amazon.com/music/unlimited",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "youtube-music",
+      "name": "YouTube Music",
+      "icon": "🎶",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://music.youtube.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "pandora",
+      "name": "Pandora",
+      "icon": "📻",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://www.pandora.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "siriusxm",
+      "name": "SiriusXM",
+      "icon": "📻",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://www.siriusxm.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "sirius"
+      ]
+    },
+    {
+      "id": "tidal",
+      "name": "TIDAL",
+      "icon": "🌊",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://tidal.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "audible",
+      "name": "Audible",
+      "icon": "🎧",
+      "category": "Music & Audio",
+      "source": "web",
+      "url": "https://www.audible.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "audiobooks"
+      ]
+    },
+    {
+      "id": "kindle-unlimited",
+      "name": "Kindle Unlimited",
+      "icon": "📚",
+      "category": "News & Reading",
+      "source": "web",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "kindle"
+      ]
+    },
+    {
+      "id": "apple-news",
+      "name": "Apple News+",
+      "icon": "📰",
+      "category": "News & Reading",
+      "source": "appStore",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "apple news"
+      ]
+    },
+    {
+      "id": "nytimes",
+      "name": "The New York Times",
+      "icon": "📰",
+      "category": "News & Reading",
+      "source": "web",
+      "url": "https://www.nytimes.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "nyt",
+        "new york times"
+      ]
+    },
+    {
+      "id": "wsj",
+      "name": "The Wall Street Journal",
+      "icon": "📰",
+      "category": "News & Reading",
+      "source": "web",
+      "url": "https://www.wsj.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "wsj",
+        "wall street journal"
+      ]
+    },
+    {
+      "id": "icloud",
+      "name": "iCloud+",
+      "icon": "☁️",
+      "category": "Cloud & Work",
+      "source": "appStore",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "icloud"
+      ]
+    },
+    {
+      "id": "google-one",
+      "name": "Google One",
+      "icon": "☁️",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://one.google.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "google"
+      ]
+    },
+    {
+      "id": "m365",
+      "name": "Microsoft 365",
+      "icon": "💼",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.microsoft.com/microsoft-365",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "office",
+        "microsoft"
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "icon": "📦",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.dropbox.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "adobe-cc",
+      "name": "Adobe Creative Cloud",
+      "icon": "🎨",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.adobe.com/creativecloud.html",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "adobe",
+        "photoshop"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva Pro",
+      "icon": "🎨",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.canva.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "icon": "📝",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.notion.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "icon": "🐘",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://evernote.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "icon": "🎥",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://zoom.us/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "linkedin-premium",
+      "name": "LinkedIn Premium",
+      "icon": "💼",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.linkedin.com/premium",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "linkedin"
+      ]
+    },
+    {
+      "id": "1password",
+      "name": "1Password",
+      "icon": "🔐",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://1password.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "password manager"
+      ]
+    },
+    {
+      "id": "nordvpn",
+      "name": "NordVPN",
+      "icon": "🛡️",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://nordvpn.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "vpn"
+      ]
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "icon": "🛡️",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://www.expressvpn.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "vpn"
+      ]
+    },
+    {
+      "id": "norton",
+      "name": "Norton",
+      "icon": "🛡️",
+      "category": "Cloud & Work",
+      "source": "web",
+      "url": "https://us.norton.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "antivirus"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT Plus",
+      "icon": "🤖",
+      "category": "AI",
+      "source": "web",
+      "url": "https://chatgpt.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "openai",
+        "gpt"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude Pro",
+      "icon": "🤖",
+      "category": "AI",
+      "source": "web",
+      "url": "https://claude.ai/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "anthropic"
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Google AI Pro (Gemini)",
+      "icon": "🤖",
+      "category": "AI",
+      "source": "web",
+      "url": "https://gemini.google.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "gemini"
+      ]
+    },
+    {
+      "id": "gamepass",
+      "name": "Xbox Game Pass",
+      "icon": "🎮",
+      "category": "Games",
+      "source": "web",
+      "url": "https://www.xbox.com/xbox-game-pass",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "xbox"
+      ]
+    },
+    {
+      "id": "ps-plus",
+      "name": "PlayStation Plus",
+      "icon": "🎮",
+      "category": "Games",
+      "source": "web",
+      "url": "https://www.playstation.com/ps-plus/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "playstation",
+        "psplus"
+      ]
+    },
+    {
+      "id": "switch-online",
+      "name": "Nintendo Switch Online",
+      "icon": "🎮",
+      "category": "Games",
+      "source": "web",
+      "url": "https://www.nintendo.com/us/switch/online/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "nintendo",
+        "switch"
+      ]
+    },
+    {
+      "id": "apple-arcade",
+      "name": "Apple Arcade",
+      "icon": "🕹️",
+      "category": "Games",
+      "source": "appStore",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "icon": "🦉",
+      "category": "Learning",
+      "source": "web",
+      "url": "https://www.duolingo.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "language"
+      ]
+    },
+    {
+      "id": "masterclass",
+      "name": "MasterClass",
+      "icon": "🎓",
+      "category": "Learning",
+      "source": "web",
+      "url": "https://www.masterclass.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "headspace",
+      "name": "Headspace",
+      "icon": "🧘",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.headspace.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "meditation"
+      ]
+    },
+    {
+      "id": "calm",
+      "name": "Calm",
+      "icon": "🌙",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.calm.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "meditation",
+        "sleep"
+      ]
+    },
+    {
+      "id": "peloton",
+      "name": "Peloton",
+      "icon": "🚴",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.onepeloton.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "planet-fitness",
+      "name": "Planet Fitness",
+      "icon": "🏋️",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.planetfitness.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "gym"
+      ]
+    },
+    {
+      "id": "strava",
+      "name": "Strava",
+      "icon": "🏃",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.strava.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "running"
+      ]
+    },
+    {
+      "id": "hellofresh",
+      "name": "HelloFresh",
+      "icon": "🥕",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.hellofresh.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "meal kit"
+      ]
+    },
+    {
+      "id": "dashpass",
+      "name": "DoorDash DashPass",
+      "icon": "🍔",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.doordash.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "doordash",
+        "delivery"
+      ]
+    },
+    {
+      "id": "uber-one",
+      "name": "Uber One",
+      "icon": "🚗",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.uber.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "uber",
+        "uber eats"
+      ]
+    },
+    {
+      "id": "instacart",
+      "name": "Instacart+",
+      "icon": "🛒",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.instacart.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "grocery"
+      ]
+    },
+    {
+      "id": "walmart-plus",
+      "name": "Walmart+",
+      "icon": "🛒",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.walmart.com/plus",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "walmart"
+      ]
+    },
+    {
+      "id": "costco",
+      "name": "Costco Membership",
+      "icon": "🏬",
+      "category": "Life & Health",
+      "source": "web",
+      "url": "https://www.costco.com/",
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "costco"
+      ]
+    },
+    {
+      "id": "gym-lesson",
+      "name": "Gym / Classes",
+      "icon": "🏃",
+      "category": "Other",
+      "source": "other",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "lessons",
+        "school"
+      ]
+    },
+    {
+      "id": "carrier-option",
+      "name": "Phone carrier add-on",
+      "icon": "📱",
+      "category": "Other",
+      "source": "carrier",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "verizon",
+        "at&t",
+        "t-mobile",
+        "carrier"
+      ]
+    },
+    {
+      "id": "newspaper",
+      "name": "Newspaper (print)",
+      "icon": "🗞️",
+      "category": "Other",
+      "source": "other",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": []
+    },
+    {
+      "id": "delivery",
+      "name": "Subscription box / delivery",
+      "icon": "🚚",
+      "category": "Other",
+      "source": "other",
+      "url": null,
+      "cancelURL": null,
+      "cancelSteps": null,
+      "price": null,
+      "cycle": null,
+      "trialDays": null,
+      "aliases": [
+        "box",
+        "delivery"
+      ]
+    }
+  ]
+}
